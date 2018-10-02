@@ -31,7 +31,7 @@ z-index: 15;
 .menu a{
   color: #333;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   margin-left: 20px;
   transition: color 0.3s;
   text-transform: uppercase;
@@ -346,7 +346,7 @@ width: 100%;
 position: relative;
 background-color:  #f0f0f0;
 padding: 20px;
-font-size: 20px;
+font-size: 18px;
 text-align: justify;
     
 }
@@ -365,7 +365,8 @@ top:40px;
 left: 45%;
 opacity: 1;
 z-index:2; 
-display: table;   
+display: table;  
+    letter-spacing: 2px;
 }
 .titleName h2{
     font-family: "Montserrat";
@@ -375,7 +376,7 @@ display: table;
     letter-spacing: 4px;
     transform: translate(0%, 0%);
     font-weight: 700;
-    font-size: 35px;
+    font-size: 25px;
    
 }
 .titleName h2:hover{
@@ -552,7 +553,7 @@ display: table;
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
-    box-shadow: 0 0 30px 3px #fff;
+    box-shadow: 0 0 30px 1px #fff;
 }
 
     .footer-distributed .footer-left i.fa-envelope , .footer-distributed .footer-center i.fa-envelope {
@@ -693,6 +694,8 @@ display: table;
             padding-top: 10px;
             height: 30px;
             background-color: #1a1a1a;
-            color:white;
+            color:#EEB934;
+            font-size: 14px;
+
         }
     
