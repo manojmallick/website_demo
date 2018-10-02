@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    .header {
+	position:relative;
+    display: inline-block;
+    width: 100%;
+}
+.left-header {
+	position: absolute;
+	display:inline-block;
+    float:left;
+	height: 70px;
+    width: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+    line-height: 20px;
+    vertical-align: center;
+     z-index: +1;
+}
+        .left-header-icon{
+          position: absolute;  
+    background-repeat: no-repeat;
+            padding-left: 10PX;
+            height: 70px;
+        width: 70px;
+            z-index: +2;
+        }
+        .left-header-icon img{
+            padding-top: 7px;
+        } 
+.right-header {
+	display:inline-block;
+    float:right;
+	height: 70px;
+	width: 100%;
+    background-color: red;
+    border-radius: 35px;
+     z-index: +1;
+}
+.description {
+	clear: both;
+	height:calc(100vh - 50px);
+	background-color: green;
+	display:block;
+	width: calc(100% - 70px);
+    margin: 0 35px;
+}
+    
+    </style>
+</head>
+
+<body>
+<div class="header">
+<div class="left-header">
+    <div class="left-header-icon">
+    <img src="images/listItem1.ico">
+    </div>
+    </div>
+<div class="right-header"></div>
+</div>
+<div class="description">
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            position: absolute;
+            left: 30%;
+            top:30%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height:60px;
+            color: #fff;
+            background: #343a53;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 60px;
+            font-family: verdana;
+            font-size:24px;
+            letter-spacing: 5px;
+            transition: .5s;
+            overflow: hidden;
+            box-sizing: border-box;
+            
+        }
+        a:before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0;
+            bottom: 0;
+            border-style: solid;
+            border-color: #EEB934 ;
+            border-width: 80px 100px;
+            z-index: -1;
+            transform: rotate(360deg);
+            transition: 1s;
+            transform-origin: left;
+            
+        }
+        a:hover:before{
+            border-color: #5BADFA;
+            transform: rotate(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">Button</a>
+</body>
+</html>

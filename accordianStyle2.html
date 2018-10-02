@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .container{
+        width: 100%;
+    }
+    .accordian{
+        counter-reset: step;
+    }
+    .accordian li{
+        list-style-type: none;
+         float: left;
+        width:33.3%;
+        position: relative;
+       text-align: center;
+    }
+    .accordian li:before{
+        content:counter(step);
+        counter-increment: step;
+        width:30px;
+        height:30px;
+        line-height: 30px;
+        display: block;
+        border-radius: 50px;
+        border:2px solid #ddd;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        background-color: #fff;
+    }
+    .accordian li:after{
+        content: '';
+        position: absolute;
+        width:100%;
+        height: 2px;
+        background-color: #ddd;
+        box-sizing: border-box;
+        border-radius: 50px;
+        top:15px;
+        left:-50%;
+        z-index: -1;
+    }
+    .accordian li:first-child:after{
+        content: none;
+    }
+    .accordian li.active{
+        color: blueviolet;
+    }
+    .accordian li.active:before{
+        border-color: blueviolet;
+    }
+    </style>
+    </head>
+
+<body>
+    <div class="container">
+        <ul class="accordian">
+            <li class="active">Step1</li>
+            <li>Step2</li>
+            <li>Step3</li>
+        </ul>
+    </div>
+</body>
+</html>

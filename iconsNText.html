@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #5f5f5f;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+ul{
+  list-style: none;
+  width: 550px;
+  height: 80px;
+}
+
+
+
+ul li{
+ 
+  width: 75px;
+  height: 70px;
+  border: 3px solid #fff;
+  margin-right: 36px;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s linear;
+   margin-top: 20px;
+}
+
+.title{
+	float: left;
+    font-size: 24px;
+    margin-left:40px;
+   margin-top: 20px;
+    padding-left:50px;
+    color: #fff;  
+    vertical-align:center;
+}
+
+ul li .fa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.5s linear;
+}
+ul li:hover{
+  background: #fff;
+  box-shadow: 0 0 30px 3px #fff;
+}
+
+ul li:hover .fa{
+  color: #5f5f5f;
+}
+@media screen and (max-width: 640px){
+  .wrapper ul{
+      width: 100px;
+  }
+  .wrapper ul li{
+      margin-top: 20px;
+  }
+}
+
+
+</style>
+
+<body>
+<div class="wrapper">
+  <ul>
+    <li><i class="fa fa-facebook" aria-hidden="true"></i><span class="title">Facebook</span></li>
+    <li><i class="fa fa-twitter" aria-hidden="true"></i><span class="title">Twitter</span></li>
+    <li><i class="fa fa-google-plus" aria-hidden="true"></i><span class="title">Google</span></li>
+    <li><i class="fa fa-reddit" aria-hidden="true"></i><span class="title">Reddit</span></li>
+    <li><i class="fa fa-whatsapp" aria-hidden="true"></i><span class="title">Whatsapp</span></li>
+  </ul>
+</div>
+
+</body>
+</html> 
